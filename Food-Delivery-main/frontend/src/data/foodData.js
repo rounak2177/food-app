@@ -114,7 +114,7 @@ const namesByCategory = {
     "Garlic Mushroom Pasta",
     "Cheesy White Sauce Pasta",
     "Classic Mac and Cheese",
-    "Tomato Basil Penne",
+    "BaMEE Basil Penne",
     "Baked Pasta",
     "Herb Butter Pasta",
   ],
