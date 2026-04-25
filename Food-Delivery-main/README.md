@@ -1,6 +1,6 @@
-# Food App
+# BaMEE
 
-A full-stack food delivery web application built with the MERN stack, including:
+BaMEE is a full-stack food delivery web application built with the MERN stack, including:
 
 - Customer web app
 - Admin dashboard
