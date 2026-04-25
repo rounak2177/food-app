@@ -1,130 +1,129 @@
-# TOMATO - Food Ordering Website
+# Food App
 
-This repository hosts the source code for TOMATO, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering.
+A full-stack food delivery web application built with the MERN stack, including:
 
-## Demo
+- Customer web app
+- Admin dashboard
+- Backend REST API
+- Authentication and cart/order flow
+- Stripe payment integration
 
-- User Panel: [https://food-delivery-frontend-s2l9.onrender.com/](https://food-delivery-frontend-s2l9.onrender.com/)
-- Admin Panel: [https://food-delivery-admin-wrme.onrender.com/](https://food-delivery-admin-wrme.onrender.com/)
+## Tech Stack
+
+- Frontend: React, Vite, React Router, Axios
+- Admin: React, Vite, Axios
+- Backend: Node.js, Express, MongoDB, Mongoose
+- Auth and Security: JWT, bcrypt
+- Payments: Stripe
+- File Uploads: Multer
+
+## Project Structure
+
+```text
+Food-Delivery-main/
+  frontend/   -> customer app
+  admin/      -> admin dashboard
+  backend/    -> API server
+```
 
 ## Features
 
-- User Panel
-- Admin Panel
-- JWT Authentication
-- Password Hashing with Bcrypt
-- Stripe Payment Integration
-- Login/Signup
-- Logout
-- Add to Cart
-- Place Order
-- Order Management
-- Products Management
-- Filter Food Products
-- Login/Signup
-- Authenticated APIs
-- REST APIs
-- Role-Based Identification
-- Beautiful Alerts
+- User signup/login
+- JWT-based authentication
+- Browse and filter food items
+- Add to cart and place orders
+- Stripe checkout integration
+- View user orders
+- Admin product management
+- Admin order management
+- Image upload support for products
 
-## Screenshots
+## Getting Started
 
-![Hero](https://i.ibb.co/59cwY75/food-hero.png)
-- Hero Section
-
-![Products](https://i.ibb.co/JnNQPyQ/food-products.png)
-- Products Section
-
-![Cart](https://i.ibb.co/t2LrQ8p/food-cart.png)
-- Cart Page
-
-![Login](https://i.ibb.co/s6PgwkZ/food-login.png)
-- Login Popup
-
-## Run Locally
-
-Clone the project
+### 1. Clone the repository
 
 ```bash
-    git clone https://github.com/Mshandev/Food-Delivery
+git clone https://github.com/rounak2177/food-app.git
+cd food-app
 ```
-Go to the project directory
+
+If your repository contains a nested folder, enter it first:
 
 ```bash
-    cd Food-Delivery
+cd Food-Delivery-main
 ```
-Install dependencies (frontend)
+
+### 2. Install dependencies
 
 ```bash
-    cd frontend
-    npm install
+cd backend
+npm install
+
+cd ../frontend
+npm install
+
+cd ../admin
+npm install
 ```
-Install dependencies (admin)
+
+### 3. Configure environment variables
+
+Create a .env file inside backend folder:
+
+```env
+PORT=4000
+MONGO_URL=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+SALT=10
+STRIPE_SECRET_KEY=your_stripe_secret_key
+```
+
+### 4. Run the application
+
+Start backend:
 
 ```bash
-    cd admin
-    npm install
+cd backend
+npm run server
 ```
-Install dependencies (backend)
+
+Start customer frontend:
 
 ```bash
-    cd backend
-    npm install
+cd frontend
+npm run dev
 ```
-Setup Environment Vaiables
 
-```Make .env file in "backend" folder and store environment Variables
-  JWT_SECRET=YOUR_SECRET_TEXT
-  SALT=YOUR_SALT_VALUE
-  MONGO_URL=YOUR_DATABASE_URL
-  STRIPE_SECRET_KEY=YOUR_KEY
- ```
-
-Setup the Frontend and Backend URL
-   - App.jsx in Admin folder
-      const url = YOUR_BACKEND_URL
-     
-  - StoreContext.js in Frontend folder
-      const url = YOUR_BACKEND_URL
-
-  - orderController in Backend folder
-      const frontend_url = YOUR_FRONTEND_URL 
-
-Start the Backend server
+Start admin dashboard:
 
 ```bash
-    nodemon server.js
+cd admin
+npm run dev
 ```
 
-Start the Frontend server
+## Default Local URLs
 
-```bash
-    npm start
-```
+- Backend API: http://localhost:4000
+- Frontend: http://localhost:5173
+- Admin: http://localhost:5174
 
-Start the Backend server
+## API Base Routes
 
-```bash
-    npm start
-```
-## Tech Stack
-* [React](https://reactjs.org/)
-* [Node.js](https://nodejs.org/en)
-* [Express.js](https://expressjs.com/)
-* [Mongodb](https://www.mongodb.com/)
-* [Stripe](https://stripe.com/)
-* [JWT-Authentication](https://jwt.io/introduction)
-* [Multer](https://www.npmjs.com/package/multer)
+- /api/user
+- /api/food
+- /api/cart
+- /api/order
+- /images
 
-## Deployment
+## Notes
 
-The application is deployed on Render.
+- Ensure MongoDB is running or MONGO_URL points to a valid MongoDB Atlas cluster.
+- Update frontend and admin API base URLs if needed for production deployment.
+- Do not commit .env files to GitHub.
 
-## Contributing
+## Future Improvements
 
-Contributions are always welcome!
-Just raise an issue, and we will discuss it.
-
-## Feedback
-
-If you have any feedback, please reach out to me [here](https://www.linkedin.com/in/muhammad-shan-full-stack-developer/)
+- Add role-based access control for admin routes
+- Add automated testing
+- Add CI/CD pipeline
+- Add Docker support
