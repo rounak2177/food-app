@@ -1,0 +1,38 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anime style girl avatar">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe8f2"/>
+      <stop offset="100%" stop-color="#e8f3ff"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5b3a7a"/>
+      <stop offset="100%" stop-color="#3d2755"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="124" fill="url(#bg)"/>
+
+  <path d="M68 120c0-43 27-72 60-72s60 29 60 72v34H68z" fill="url(#hair)"/>
+  <path d="M79 116c0-34 21-56 49-56s49 22 49 56v15H79z" fill="#6f4b92"/>
+
+  <ellipse cx="128" cy="136" rx="46" ry="54" fill="#ffd9c7"/>
+
+  <circle cx="108" cy="134" r="10" fill="#2a2540"/>
+  <circle cx="148" cy="134" r="10" fill="#2a2540"/>
+  <circle cx="111" cy="131" r="3" fill="#ffffff"/>
+  <circle cx="151" cy="131" r="3" fill="#ffffff"/>
+
+  <path d="M104 115q4-6 12-3" stroke="#2a2540" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M140 112q8-3 12 3" stroke="#2a2540" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <path d="M127 139q2 5 0 10" stroke="#d6a28e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M113 159q15 11 30 0" stroke="#cc5f7b" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <ellipse cx="93" cy="150" rx="8" ry="5" fill="#f3a1b8" opacity="0.65"/>
+  <ellipse cx="163" cy="150" rx="8" ry="5" fill="#f3a1b8" opacity="0.65"/>
+
+  <path d="M82 180q46 21 92 0v40H82z" fill="#9dc2ff"/>
+  <path d="M78 182q50 25 100 0" stroke="#6e9ae6" stroke-width="3" fill="none"/>
+
+  <circle cx="128" cy="128" r="124" fill="none" stroke="#ffffff" stroke-width="8"/>
+</svg>

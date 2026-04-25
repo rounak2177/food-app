@@ -1,0 +1,147 @@
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.category-list h1 {
+  color: #262626;
+  font-weight: 600;
+}
+
+.category-list-text {
+  max-width: 70%;
+  color: #666;
+  line-height: 1.6;
+}
+
+.category-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.category-scroll {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 6px 54px 10px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-chip {
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 10px;
+  color: #666;
+  cursor: pointer;
+  scroll-snap-align: center;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.category-chip img {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  object-fit: cover;
+}
+
+.category-chip span {
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.category-chip:hover {
+  transform: translateY(-3px);
+  color: #8a3c72;
+}
+
+.category-chip.active img {
+  border-color: #ff4fa3;
+}
+
+.category-chip.active span {
+  color: #8a3c72;
+  font-weight: 600;
+}
+
+.category-slide-btn {
+  position: absolute;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #f3d5e8;
+  border-radius: 50%;
+  background: #fff;
+  color: #8a3c72;
+  box-shadow: 0 8px 22px rgba(22, 22, 22, 0.12);
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.category-slide-btn:hover {
+  transform: translateY(-1px);
+  background: #ff4fa3;
+  color: #fff;
+}
+
+.category-slide-btn-left {
+  left: 0;
+}
+
+.category-slide-btn-right {
+  right: 0;
+}
+
+.category-list hr {
+  margin: 8px 0;
+  border: none;
+  height: 2px;
+  background: #e8e8e8;
+}
+
+@media (max-width: 1050px) {
+  .category-list-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .category-scroll {
+    gap: 14px;
+    padding: 6px 42px 10px;
+  }
+
+  .category-chip img {
+    width: 78px;
+    height: 78px;
+  }
+
+  .category-chip span {
+    font-size: 0.95rem;
+  }
+
+  .category-slide-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 26px;
+  }
+}

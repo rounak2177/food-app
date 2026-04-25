@@ -1,0 +1,70 @@
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    min-height: 104px;
+}
+.navbar .logo{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.brand-name{
+    margin: 0;
+    font-size: 52px;
+    line-height: 1;
+    color: #ff4fa3;
+    letter-spacing: 0.5px;
+}
+.brand-subtitle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 34px;
+    font-weight: 600;
+    color: #4b4b4b;
+    text-align: center;
+    white-space: nowrap;
+}
+.navbar .profile{
+    width: 40px;
+}
+.login-conditon{
+    position: fixed;
+    right: 34px;
+    bottom: 28px;
+    z-index: 20;
+    border: none;
+    border-radius: 999px;
+    background: #ff4fa3;
+    color: #fff;
+    box-shadow: 0 12px 28px rgba(255, 79, 163, 0.28);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 13px 28px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.login-conditon:hover{
+    transform: translateY(-2px);
+    background: #e83f91;
+    box-shadow: 0 16px 34px rgba(255, 79, 163, 0.34);
+}
+
+@media (max-width: 900px) {
+    .brand-name{
+        font-size: 38px;
+    }
+    .brand-subtitle{
+        font-size: 26px;
+    }
+    .login-conditon{
+        right: 18px;
+        bottom: 18px;
+        font-size: 16px;
+        padding: 11px 22px;
+    }
+}

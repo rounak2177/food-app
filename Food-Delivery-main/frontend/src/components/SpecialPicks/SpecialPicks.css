@@ -1,0 +1,59 @@
+.special-picks {
+  margin-top: 24px;
+}
+
+.special-picks-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.special-picks-heading h2 {
+  font-size: max(2vw, 24px);
+  font-weight: 600;
+}
+
+.special-picks-heading p {
+  color: #8a3c72;
+  font-weight: 500;
+}
+
+.special-picks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 260px));
+  justify-content: start;
+  margin-top: 24px;
+  gap: 20px;
+}
+
+.special-picks .food-card {
+  width: 100%;
+  max-width: 260px;
+}
+
+.special-picks .food-card-image {
+  height: 170px;
+}
+
+.special-picks .food-card-content {
+  padding: 16px 18px 18px;
+}
+
+.special-picks .food-card-content h3 {
+  font-size: 1.12rem;
+}
+
+.special-picks .food-card-price {
+  font-size: 1.18rem;
+}
+
+@media (max-width: 560px) {
+  .special-picks-list {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .special-picks .food-card {
+    max-width: none;
+  }
+}
